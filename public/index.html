@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="./Cover Template · Bootstrap v5.1_files/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,20 +28,55 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>Casanova</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Casanova</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.1/examples/cover/#">
+            Home
+          </a>
+          <a class="nav-link" href="https://github.com/youngjae99">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <main class="px-3">
+      <h1>이 말, 할까 말까 고민될 때에는</h1>
+      <p class="lead">
+        당신의 연인에게 이 말, 해도 될까? 안될까? 분위기를 드럽게 못 읽는 당신을 위해 AI가 판단해줄께요!
+      </p>
+      <p class="lead">
+        <div id="root"></div>
+        <a href="https://getbootstrap.com/docs/5.1/examples/cover/#"
+          class="btn btn-lg btn-secondary fw-bold border-white bg-white">
+          판단해줘!
+        </a>
+      </p>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>
+        Powered by 
+        <a href="https://ainize.ai/dleunji/KoGPT2-chatbot" class="text-white">
+          KoGPT2
+        </a>
+        , made by 
+        <a href="https://github.com/youngjae99" class="text-white">
+          @youngjae
+        </a>
+        .
+      </p>
+    </footer>
+  </div>
+
+</body>
+
 </html>
