@@ -73,36 +73,7 @@ const App = () => {
       showSpinner(false);
     } catch (e) {
       console.log(e);
-    }
-    
-    // try {
-    //   let bodyFormData = new FormData();
-    //   bodyFormData.append("text", input);
-    //   const response = await axios.post(
-    //     "https://master-soongsil-bert-base-beep-deploy-jason9693.endpoint.ainize.ai/predict/logits",
-    //     bodyFormData,
-    //     {
-    //       headers: {
-    //         // Overwrite Axios's automatically set Content-Type
-    //         "Content-Type": "multipart/form-data",
-    //         accept: "application/json",
-    //       },
-    //     }
-    //   );
-    //   console.log(response.data["result"])
-    //   setOffense(response.data["result"]);
-    // } catch (e) {
-    //   console.log(e);
-    // }
-    
-  };
-
-  const parseResult = (e) => {
-    console.log("parseResult in!");
-  };
-
-  const getTextValue = (e) => {
-    onclick();
+    }  
   };
 
   return (

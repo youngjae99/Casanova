@@ -27,13 +27,13 @@ const FirstSlide = (props) => {
         />
         
         <br />
-        <a
+        <div
           class="btn btn-lg btn-secondary fw-bold border-white bg-white"
           variant="light"
           onClick={props.onClick}
         >
           판단해줘!
-        </a>
+        </div>
       </div>
     </div>
   );

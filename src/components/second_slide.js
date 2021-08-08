@@ -11,13 +11,13 @@ const SecondSlide = (props) => {
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <ResultComponent score={props.score} similar={props.similar}/>
           <br/>
-          <a
+          <div
             class="btn btn-lg btn-secondary fw-bold border-white bg-white"
             variant="light"
             onClick={props.restart}
           >
             <i class="fas fa-redo-alt"></i> 다시하기
-          </a>
+          </div>
         </Form.Group>
       )}
     </div>
