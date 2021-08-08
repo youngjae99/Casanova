@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Casanova/static/css/main.0bbf3d91.chunk.css",
-    "main.js": "/Casanova/static/js/main.79b7bf16.chunk.js",
-    "main.js.map": "/Casanova/static/js/main.79b7bf16.chunk.js.map",
+    "main.js": "/Casanova/static/js/main.8d015f39.chunk.js",
+    "main.js.map": "/Casanova/static/js/main.8d015f39.chunk.js.map",
     "runtime-main.js": "/Casanova/static/js/runtime-main.92a78a24.js",
     "runtime-main.js.map": "/Casanova/static/js/runtime-main.92a78a24.js.map",
     "static/js/2.e9dfbb74.chunk.js": "/Casanova/static/js/2.e9dfbb74.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.92a78a24.js",
     "static/js/2.e9dfbb74.chunk.js",
     "static/css/main.0bbf3d91.chunk.css",
-    "static/js/main.79b7bf16.chunk.js"
+    "static/js/main.8d015f39.chunk.js"
   ]
 }
