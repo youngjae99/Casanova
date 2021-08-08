@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Casanova/static/css/main.0bbf3d91.chunk.css",
+    "main.js": "/Casanova/static/js/main.79b7bf16.chunk.js",
+    "main.js.map": "/Casanova/static/js/main.79b7bf16.chunk.js.map",
+    "runtime-main.js": "/Casanova/static/js/runtime-main.92a78a24.js",
+    "runtime-main.js.map": "/Casanova/static/js/runtime-main.92a78a24.js.map",
+    "static/js/2.e9dfbb74.chunk.js": "/Casanova/static/js/2.e9dfbb74.chunk.js",
+    "static/js/2.e9dfbb74.chunk.js.map": "/Casanova/static/js/2.e9dfbb74.chunk.js.map",
+    "static/js/3.bf72c74f.chunk.js": "/Casanova/static/js/3.bf72c74f.chunk.js",
+    "static/js/3.bf72c74f.chunk.js.map": "/Casanova/static/js/3.bf72c74f.chunk.js.map",
+    "index.html": "/Casanova/index.html",
+    "static/css/main.0bbf3d91.chunk.css.map": "/Casanova/static/css/main.0bbf3d91.chunk.css.map",
+    "static/js/2.e9dfbb74.chunk.js.LICENSE.txt": "/Casanova/static/js/2.e9dfbb74.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92a78a24.js",
+    "static/js/2.e9dfbb74.chunk.js",
+    "static/css/main.0bbf3d91.chunk.css",
+    "static/js/main.79b7bf16.chunk.js"
+  ]
+}
