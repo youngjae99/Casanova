@@ -8,5 +8,9 @@
 # Casanova
 
 Social app with Korean GPT-2 API
+이 말을 할까 말까 고민하는 당신을 위해 AI가 판단해줄께요!
 
-## How to start
+
+# How to run
+
+# 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form } from "react-bootstrap";
 
 const FirstSlide = (props) => {
@@ -19,7 +19,7 @@ const FirstSlide = (props) => {
         <Form.Control
           id="inputbox"
           type="text"
-          placeholder="한나야 자니..?"
+          placeholder="자니? 보고싶다.."
           value={props.input}
           onChange={onChange}
           onKeyDown={(e) => keypress(e)}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
-import { Form } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import FirstSlide from "./components/first_slide.js";
 import SecondSlide from "./components/second_slide.js";

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Form, Spinner } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
+import React from "react";
+import { Form } from "react-bootstrap";
 import LoadingScreen from "./loading";
 import ResultComponent from "./resultComponent";
 
