@@ -11,9 +11,11 @@ const FirstSlide = (props) => {
     props.setInput(e.target.value);
   };
 
-  const parseResult = (e) => {
-    console.log("parseResult in!");
-  };
+  const keypress=(event)=> {
+    if (event.keyCode === 13) {
+        props.onClick();
+    }
+}
 
   return (
     <div style={{ width: "100%", height: 300, backgroundColor: "transparent" }}>
@@ -24,6 +26,7 @@ const FirstSlide = (props) => {
           placeholder="한나야 자니..?"
           value={input}
           onChange={onChange}
+          onKeyDown={(e) => keypress(e) }
         />
         <Form.Text className="text-muted">
           상대에게 톡하기 전에, 제 생각을 들려줄께요

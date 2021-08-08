@@ -25,6 +25,9 @@ const App = () => {
   const onClick = async () => {
     setIndex(1);
     console.log("text:", input);
+    if(input==null){
+      return "none";
+    }
     showSpinner(true);
     try {
       let bodyFormData = new FormData();
@@ -41,7 +44,8 @@ const App = () => {
           },
         }
       );
-      setData(response.data);
+      console.log(response.data)
+      setData(response.data["1"]["text_b"].replace("\"", ""));
       showSpinner(false);
     } catch (e) {
       console.log(e);
@@ -62,9 +66,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail"></Form.Group>
-        <br />
+      <div>
         <Carousel
           controls={false}
           indicators={false}
@@ -77,11 +79,11 @@ const App = () => {
           </Carousel.Item>
 
           <Carousel.Item>
-            <SecondSlide spinner={spinner} data={data} restart={restart} />
+            <SecondSlide spinner={spinner} data={data} restart={restart} score={30} similar={data}/>
           </Carousel.Item>
         </Carousel>
         <br />
-      </Form>
+      </div>
       <br />
     </div>
   );
