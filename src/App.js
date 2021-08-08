@@ -1,18 +1,34 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import axios from "axios";
 import "./App.css";
-import { Button, ButtonToolbar, Form, FormGroup, Spinner} from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
+import FirstSlide from "./components/first_slide.js";
+import SecondSlide from "./components/second_slide.js";
 
 const App = () => {
+  const [input, setInput] = useState(null);
   const [data, setData] = useState(null);
   const [spinner, showSpinner] = useState(false);
+  const [index, setIndex] = useState(0); // carousel page index
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+    console.log("handleSelect", selectedIndex);
+  };
+
+  const restart = async () => {
+    setIndex(0);
+    setInput("");
+  };
 
   const onClick = async () => {
+    setIndex(1);
+    console.log("text:", input);
     showSpinner(true);
     try {
       let bodyFormData = new FormData();
-      bodyFormData.append("text", "내가 너를 많이 사랑해");
+      bodyFormData.append("text", input);
       bodyFormData.append("num_samples", 20);
       const response = await axios.post(
         "https://main-ko-gpt2-dino-fpem123.endpoint.ainize.ai/gen",
@@ -32,38 +48,39 @@ const App = () => {
     }
   };
 
+  const onChange = (e) => {
+    setInput(e.target.value);
+  };
+
+  const parseResult = (e) => {
+    console.log("parseResult in!");
+  };
+
+  const getTextValue = (e) => {
+    onclick();
+  };
+
   return (
     <div className="App">
       <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>어떤 말을 할 생각인가요?</Form.Label>
-          <Form.Control type="text" placeholder="한나야 자니..?" />
-          <Form.Text className="text-muted">
-            상대에게 톡하기 전에, 제 생각을 들려줄께요
-          </Form.Text>
-        </Form.Group>
-        <a
-          onClick={onClick}
-          class="btn btn-lg btn-secondary fw-bold border-white bg-white"
+        <Form.Group className="mb-3" controlId="formBasicEmail"></Form.Group>
+        <br />
+        <Carousel
+          controls={false}
+          indicators={false}
+          activeIndex={index}
+          onSelect={handleSelect}
+          interval={null}
         >
-          판단해줘!
-        </a>
-        <br/>
-        {spinner && (
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>)
-        }
-        {data && (
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>분석 결과</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={7}
-              value={JSON.stringify(data, null, 2)}
-            />
-          </Form.Group>
-        )}
+          <Carousel.Item>
+            <FirstSlide onClick={onClick} setInput={setInput} />
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <SecondSlide spinner={spinner} data={data} restart={restart} />
+          </Carousel.Item>
+        </Carousel>
+        <br />
       </Form>
       <br />
     </div>
