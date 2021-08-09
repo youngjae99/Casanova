@@ -9,25 +9,16 @@
 
 https://youngjae99.github.io/Casanova/
 
-Social app with Korean GPT-2 API
-
 이 말을 할까 말까 고민하는 당신을 위해 AI가 판단하고 도와줄께요!
+
+Ainize에서 제공하는 두 모델 API를 사용했습니다. BERT기반 한국어 문장 공격성 분류 모델을 제공하는 [SoongsilBERT-base-beep-deploy API](https://ainize.ai/strutive07/SoongsilBERT-base-beep-deploy)를 통해 문장의 Hate or Offensive가 있는지를 바탕으로 멘트 점수(매력도)를 측정하고, KoGPT2와 Datasets from Instructions (DINO 🦕)를 이용하여 데이터를 생성하는 [KoGPT2-DINO API](https://ainize.ai/fpem123/KoGPT2-DINO)를 이용해 유사하거나 동일한 의미를 갖는 문장을 AI가 더 나은 멘트를 추천해줍니다.
+
 
 # How to run
 - `docker pull youngjae99/casanova`
 - `docker-compose up -d --build`
 
 # Example input
-- 자니? 보고싶다..
-- 결과
-- 
-![image](https://user-images.githubusercontent.com/6705096/128650058-56464ec4-77d2-4f25-a00a-378c14fba315.png)
 
-- 우리 내일 영화보러갈래? 표는 내가 살께
-- 결과
-![image](https://user-images.githubusercontent.com/6705096/128650090-8d61cb0f-143b-4043-8cff-818fa79ec16a.png)
-
-- 너 진짜 못생겼다
-- 결과
-![image](https://user-images.githubusercontent.com/6705096/128650067-3880de0b-2759-4254-b6ee-ce5548d7394f.png)
+![image](https://user-images.githubusercontent.com/6705096/128650417-317977ac-d989-4f27-b3a7-851b30e2a241.png)
 
