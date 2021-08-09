@@ -4,7 +4,6 @@ import "./App.css";
 import Carousel from "react-bootstrap/Carousel";
 import FirstSlide from "./components/first_slide.js";
 import SecondSlide from "./components/second_slide.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
