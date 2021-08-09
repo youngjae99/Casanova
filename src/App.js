@@ -37,7 +37,7 @@ const App = () => {
     try {
       let bodyFormData = new FormData();
       bodyFormData.append("text", input);
-      bodyFormData.append("num_samples", 100);
+      bodyFormData.append("num_samples", 10);
       const response = await axios.post(
         "https://main-ko-gpt2-dino-fpem123.endpoint.ainize.ai/gen",
         bodyFormData,

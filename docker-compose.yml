@@ -4,7 +4,7 @@ services:
   sample:
     container_name: casanova
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
     volumes:
       - ".:/app"
@@ -13,3 +13,4 @@ services:
       - "3001:3000"
     environment:
       - NODE_ENV=development
+    stdin_open: true
