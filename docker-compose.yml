@@ -1,4 +1,4 @@
-version: "1.0"
+version: "3.0"
 
 services:
   sample:
@@ -10,7 +10,7 @@ services:
       - ".:/app"
       - "/app/node_modules"
     ports:
-      - "3001:3000"
+      - "3001:3001"
     environment:
       - NODE_ENV=development
     stdin_open: true
