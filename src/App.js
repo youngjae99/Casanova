@@ -7,7 +7,7 @@ import SecondSlide from "./components/second_slide.js";
 
 
 const App = () => {
-  const [input, setInput] = useState(null);
+  const [input, setInput] = useState("");
   const [data, setData] = useState(null);
   const [hate, setHate] = useState(null);
   const [offensive, setOffense] = useState(null);
@@ -20,7 +20,7 @@ const App = () => {
   };
 
   const restart = async () => {
-    setInput(null);
+    setInput("");
     Array.from(document.querySelectorAll("#inputbox")).forEach(
       input => (input.value = "")
     );
@@ -88,7 +88,7 @@ const App = () => {
           interval={null}
         >
           <Carousel.Item>
-            <FirstSlide input={null} onClick={onClick} setInput={setInput} />
+            <FirstSlide input={""} onClick={onClick} setInput={setInput} />
           </Carousel.Item>
 
           <Carousel.Item>

@@ -28,7 +28,7 @@ const FirstSlide = (props) => {
         
         <br />
         <div
-          class="btn btn-lg btn-secondary fw-bold border-white bg-white"
+          className="btn btn-lg btn-secondary fw-bold border-white bg-white"
           variant="light"
           onClick={props.onClick}
         >
