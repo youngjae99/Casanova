@@ -1,0 +1,15 @@
+version: "1.0"
+
+services:
+  sample:
+    container_name: casanova
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
