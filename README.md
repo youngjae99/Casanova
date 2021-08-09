@@ -7,7 +7,9 @@
 
 # Casanova
 
-https://youngjae99.github.io/Casanova/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d86caba6-5b6b-47ae-bb6d-888f8c0fddc3/deploy-status)](https://app.netlify.com/sites/casanova-gpt2/deploys)
+
+https://casanova-gpt2.netlify.app
 
 이 말을 할까 말까 고민하는 당신을 위해 AI가 판단하고 도와줄께요!
 
@@ -24,6 +26,8 @@ Casanova는 Ainize에서 제공하는 두 모델 API를 사용합니다. BERT기
 # How to run
 - `docker pull youngjae99/casanova`
 - `docker-compose up -d --build`
+
+http://18.116.81.162:3001/ EC2 link
 
 # Example input
 
