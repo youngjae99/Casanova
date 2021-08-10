@@ -24,10 +24,12 @@ Casanova는 Ainize에서 제공하는 두 모델 API를 사용합니다. BERT기
 
 
 # How to run
+- Preset : `git`, `docker`, `docker-compose` should be installed on your server(or local server)
+- `git clone https://github.com/youngjae99/Casanova.git`
 - `docker pull youngjae99/casanova`
 - `docker-compose up -d --build`
 
-http://18.116.81.162:3001/ EC2 link
+[18.119.157.92](18.119.157.92) AWS EC2 link
 
 # Example input
 
